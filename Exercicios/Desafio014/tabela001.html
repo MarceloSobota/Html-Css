@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+
+            font-size: 1.4em;
+            font-weight: bold;
+            
+        }
+
+        table{
+
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        
+         th, td{ 
+
+            
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Desafio de Tabelas</h1>
+
+    <table>
+        
+        <caption>
+            Informe de Notas
+        </caption>
+        
+        <thead>
+
+            <tr style="background-color:black; color: white;">
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>  
+            <tr style="background-color:black; color: white;">
+                <th>Nota1</th>
+                <th>Nota2</th>
+            </tr>
+               
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>8,0</td>
+                <td>7,0</td>
+                <td>7,5</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>6,0</td>
+                <td>8,0</td>
+                <td>7,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>4,5</td>
+                <td>6,5</td>
+                <td>5,5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>6,0</td>
+                <td>6,5</td>
+                <td>6,25</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="background-color:black; color: white;">Média de Exatas</td>
+                <td style="background-color:black; color: white;">6,56</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>7,0</td>
+                <td>7,0</td>
+                <td>7,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>6,0</td>
+                <td>6,0</td>
+                <td>6,0</td>
+            </tr>
+            <tr>
+                <td  colspan="4"   style="background-color:black; color: white;">Média de Humanas</td>
+                <td style="background-color:black; color: white;" >6,5</td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+
+</body>
+</html>
